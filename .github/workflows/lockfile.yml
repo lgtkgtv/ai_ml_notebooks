@@ -44,4 +44,3 @@ jobs:
           # Install strictly from lock without updating it
           uv sync --locked
         # `uv sync --locked` avoids re-locking and asserts lock consistency. :contentReference[oaicite:1]{index=1}
-

@@ -25,7 +25,7 @@ uv_cache/
 # Secrets (NEVER commit)
 .env
 .env.*
-secret/* 
+secret/*
 tokens/*
 *.key
 *.pem
@@ -62,4 +62,3 @@ htmlcov/
 # Node / frontend (if applicable)
 node_modules/
 *.map
-

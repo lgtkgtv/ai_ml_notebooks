@@ -1,4 +1,4 @@
-Here’s a concise but intuitive explanation of the **main Google API Python libraries**, 
+Here’s a concise but intuitive explanation of the **main Google API Python libraries**,
 with tiny code fragments to anchor your understanding:
 
 ---
@@ -96,7 +96,7 @@ google-auth-oauthlib
 
 ---
 
-Here are **concise cheatsheets** for using Google APIs with Python, covering common use cases like 
+Here are **concise cheatsheets** for using Google APIs with Python, covering common use cases like
     YouTube and Drive, using the three libraries we discussed (`google-auth`, `google-auth-oauthlib`, `google-api-python-client`).
 
 ---

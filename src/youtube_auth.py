@@ -23,7 +23,7 @@ def get_authenticated_youtube(account: str,
     scopes = scopes or SCOPES
     client_secret_file = client_secret_file or DEFAULT_CLIENT_SECRET_FILE
     print(f"client_secret_file", client_secret_file)
-     
+
     if not os.path.exists(client_secret_file):
         raise FileNotFoundError(f"Missing client_secret.json at: {client_secret_file}")
 

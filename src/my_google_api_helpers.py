@@ -55,7 +55,7 @@ def load_scope_profiles(yaml_path: str = CONFIG_SCOPE_PATH) -> dict:
 # - user: lgtkgtv@gmail.com
 #  apis:
 #    youtube: write
-#    
+#
 def load_user_api_config(yaml_path: str = CONFIG_USERS_PATH) -> list:
     with open(yaml_path) as f:
         return yaml.safe_load(f)
@@ -135,4 +135,3 @@ def get_google_api_client(api_name: str,
 #  "scopes": ["https://www.googleapis.com/auth/gmail.send"],
 #  ...
 # }
-

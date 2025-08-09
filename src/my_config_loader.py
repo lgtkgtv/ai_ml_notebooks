@@ -18,4 +18,3 @@ def load_env(verbose: bool = False):
 
 def get_config(key: str, default: str = None):
     return os.getenv(key, default)
-
