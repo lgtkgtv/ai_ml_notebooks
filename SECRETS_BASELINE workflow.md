@@ -95,7 +95,7 @@ This baseline tells the hook “I already scanned the repo and approved what’s
 
 This makes your setup **plug-and-play** — you won’t get blocked on the first commit, but you’ll still prevent new leaks.
 
-Do you want me to also give you the **GitHub Actions job** that runs `detect-secrets` on pull requests so it’s enforced in CI, not just locally? 
+Do you want me to also give you the **GitHub Actions job** that runs `detect-secrets` on pull requests so it’s enforced in CI, not just locally?
 
 That would make this airtight even if someone disables pre-commit.
 
@@ -181,7 +181,6 @@ This job scans the **diff** between PR head and base for secrets and fails if it
    * Require a pull request before merging.
    * **Require status checks to pass** → select **Secrets guard** (and TruffleHog if enabled).
 
-That’s it — now both **local commits** (pre-commit) and **PRs** (Actions) will block secret leaks. 
+That’s it — now both **local commits** (pre-commit) and **PRs** (Actions) will block secret leaks.
 
 If you want, I can also give you a **baseline refresh** workflow (manual dispatch) to rotate the `.secrets.baseline` in a controlled way.
-

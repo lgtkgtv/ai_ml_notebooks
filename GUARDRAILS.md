@@ -29,5 +29,3 @@ git push -u origin chore/lockfile-guard
 ```
 
 Then open a PR and set up branch protection to require the **Lockfile guard** workflow to pass.
-
-

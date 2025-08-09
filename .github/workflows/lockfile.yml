@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0
       - name: Install uv
         uses: astral-sh/setup-uv@v3
         with:
@@ -44,4 +45,3 @@ jobs:
           # Install strictly from lock without updating it
           uv sync --locked
         # `uv sync --locked` avoids re-locking and asserts lock consistency. :contentReference[oaicite:1]{index=1}
-

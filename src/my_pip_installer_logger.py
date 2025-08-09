@@ -6,7 +6,7 @@ from typing import List, Dict
 
 def run_pip_install_summary(packages: List[str]) -> Dict[str, Dict]:
     """Install pip packages with clean summary and safe repeated use."""
-    
+
     # In-memory log buffer
     log_buffer = StringIO()
 
@@ -70,7 +70,7 @@ def run_pip_install_summary(packages: List[str]) -> Dict[str, Dict]:
 
 
 """
-Example Usage 
+Example Usage
 
 packages = ["google-auth", "nonexistent-package"]
 results, logs = run_pip_install_summary(packages)

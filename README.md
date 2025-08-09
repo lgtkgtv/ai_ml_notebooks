@@ -1,4 +1,4 @@
-# README.md 
+# README.md
 
 ```bash
 uv run --with jupyterlab jupyter lab --no-browser
@@ -97,7 +97,7 @@ http://localhost:8888/?token=...
 
 ---
 
-## 📂 Recommended Project Layout 
+## 📂 Recommended Project Layout
 
 ```text
 ai_ml_notebooks/
@@ -181,8 +181,8 @@ MIT (or your preferred license)
 
 ```
 
-------------------------------------------------------------------------------------------------------  
- 
+------------------------------------------------------------------------------------------------------
+
 
 # ✅ Stage 1: Modular `.env` Loader for Cloud + API Integration
 
@@ -205,7 +205,7 @@ ai_ml_notebooks/
 
 ```ini
 # === API Keys ===
-OPENAI_API_KEY= 
+OPENAI_API_KEY=
 # === Project Config ===
 PROJECT_NAME=ai_ml_notebooks
 PROJECT_ROOT_DIR=/home/s/lgtk/ai_ml_notebooks
@@ -401,9 +401,9 @@ jobs:
           uv sync --locked
         # `uv sync --locked` avoids re-locking and asserts lock consistency. :contentReference[oaicite:1]{index=1}
 ```
-* `uv lock --check` (alias --locked) **fails** if `uv.lock` is missing or would change → perfect for CI. 
-* `uv sync --locked` installs from the lock **without** updating it. Good sanity check for reproducibility. 
- 
+* `uv lock --check` (alias --locked) **fails** if `uv.lock` is missing or would change → perfect for CI.
+* `uv sync --locked` installs from the lock **without** updating it. Good sanity check for reproducibility.
+
 
 #### Branch protection / ruleset (GitHub)
 
@@ -418,7 +418,7 @@ In Settings → Code and automation → Branches → Branch protection rules for
 
 **Local guardrails (pre-commit)**
 
-* **Catch secrets & formatting before they ever hit CI:** 
+* **Catch secrets & formatting before they ever hit CI:**
 ```
 pipx install pre-commit detect-secrets
 pre-commit sample-config > .pre-commit-config.yaml
