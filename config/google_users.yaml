@@ -1,0 +1,15 @@
+# Each user listed here can be authorized against different APIs and scope profiles.
+# Scopes are defined in `google_api_scopes.yaml`
+# You may add more users and APIs (e.g., calendar, photos) as needed.
+
+- user: lgtkgtv@gmail.com
+  apis:
+    youtube: write  # full access to manage YouTube content
+    drive: read      # read-only metadata access
+    gmail: send      # permission to send emails
+
+- user: schn_godse@gmail.com
+  apis:
+    youtube: read  # full access to manage YouTube content
+    drive: read      # read-only metadata access
+    gmail: read      # permission to send emails

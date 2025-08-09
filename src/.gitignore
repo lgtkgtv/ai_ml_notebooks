@@ -1,0 +1,65 @@
+# Python junk
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist-info/
+build/
+dist/
+
+# venv & uv
+.venv/
+.uv/
+uv_cache/
+# lockfiles we DO want to track:
+#  !uv.lock   # leave unlocked so it’s tracked
+
+
+# Jupyter
+.ipynb_checkpoints/
+.profile_default/
+.DS_Store
+
+# Secrets (NEVER commit)
+.env
+.env.*
+secret/* 
+tokens/*
+*.key
+*.pem
+*.p12
+credentials*.json
+service_account*.json
+
+
+# Data / model artifacts (prefer a dedicated data/ dir)
+data/
+datasets/
+checkpoints/
+models/
+outputs/
+runs/
+wandb/
+mlruns/
+*.ckpt
+*.h5
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.npz
+
+# Logs & coverage
+logs/
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Node / frontend (if applicable)
+node_modules/
+*.map
+

@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/lgtkgtv/ai_ml_notebooks.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "chore/lockfile-guard"]
+	remote = origin
+	merge = refs/heads/chore/lockfile-guard

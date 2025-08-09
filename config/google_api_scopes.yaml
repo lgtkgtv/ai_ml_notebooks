@@ -1,0 +1,45 @@
+# OAuth2 scope profiles for supported Google APIs.
+# You can safely extend this file with more services using the same structure.
+# Examples: calendar, people, analytics, photos, sheets, slides, docs, classroom
+
+youtube:
+  # Read-only access to YouTube channel and video data
+  read:
+    - https://www.googleapis.com/auth/youtube.readonly
+
+  # Full access to manage YouTube videos and playlists (requires user consent)
+  write:
+    - https://www.googleapis.com/auth/youtube.force-ssl
+
+drive:
+  # Metadata read access (no file contents)
+  read:
+    - https://www.googleapis.com/auth/drive.metadata.readonly
+
+  # Read/write access to user's Drive files (created/modified by your app)
+  write:
+    - https://www.googleapis.com/auth/drive.file
+
+  # Full access to Drive (not recommended unless explicitly required)
+  admin:
+    - https://www.googleapis.com/auth/drive
+
+gmail:
+  # Read-only access to user's Gmail messages
+  read:
+    - https://www.googleapis.com/auth/gmail.readonly
+
+  # Send emails on behalf of user (no read access)
+  send:
+    - https://www.googleapis.com/auth/gmail.send
+
+  # Modify Gmail labels, messages, etc.
+  modify:
+    - https://www.googleapis.com/auth/gmail.modify
+
+  # Full Gmail access including reading, sending, and organizing mail
+  full:
+    - https://www.googleapis.com/auth/gmail.modify
+    - https://www.googleapis.com/auth/gmail.labels
+
+
